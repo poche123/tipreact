@@ -26,8 +26,9 @@ function App() {
         :(
           <>
         <Routes>
+        <Route path="/">
          <Route index element={<Home/>} />
-         <Route path="/">
+         
             <Route path="login" element={<Login />} />
             <Route path="slapriority1" element={<Slapriority1 />} />
             <Route path="slapriority2" element={<Slapriority2 />} />
@@ -36,7 +37,7 @@ function App() {
           </Route>
         </Routes>
         </>
-        )}
+        )}  
       </div>
       </BrowserRouter>
     </div>
